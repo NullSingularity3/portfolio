@@ -4,6 +4,7 @@ import React from 'react';
 // gutter - the space between columns in a grid layout
 const gutter=1.25;
 
+
 const styles = stylex.create({
   column: {
     backgroundColor: 'rgba(44, 255, 1, 0.86)',
@@ -12,6 +13,7 @@ const styles = stylex.create({
   },
   // i hate it but you have to generate it before for stylex
   // object spread (... python: unpack) is not possible :V
+  // stylex takes only static values
   span1: { flexBasis: '8.3333%', maxWidth: '8.3333%' },
   span2: { flexBasis: '16.6667%', maxWidth: '16.6667%' },
   span3: { flexBasis: '25%', maxWidth: '25%' },

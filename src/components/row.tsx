@@ -4,7 +4,7 @@ const styles = stylex.create({
     row: {
         display: 'flex',
         flexWrap: 'wrap',
-
+        backgroundColor: 'rgba(119, 0, 255, 0.86)',
     }
 });
 

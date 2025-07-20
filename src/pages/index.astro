@@ -13,16 +13,24 @@ import Column from '../components/column'
 <Layout>
 	<Container><p>Hello</p></Container>
 
+	<Row>
+		<Column span={2}>
+			Works
+		</Column>
+		<Column span={2}>
+			About
+		</Column>
+		<Column span={2}>
+			CV
+		</Column>
+		<Column span={2}>
+			Contact
+		</Column>
+	</Row>
+
 	<Row>This is row 1</Row>
 	<Row>This is row 2</Row>
 	<Row>This is row 3</Row>
 
-	<Row>
-		<Column span={3}>
-			column 1
-		</Column>
-		<Column>
-			column 2
-		</Column>
-	</Row>
+
 </Layout>
