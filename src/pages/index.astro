@@ -2,9 +2,12 @@
 import Layout from '../layouts/layout.astro';
 import Container from '../components/container'
 import Row from '../components/row'
+import Column from '../components/column'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+// hint: modify this file and refresh page
 ---
 
 <Layout>
@@ -13,4 +16,13 @@ import Row from '../components/row'
 	<Row>This is row 1</Row>
 	<Row>This is row 2</Row>
 	<Row>This is row 3</Row>
+
+	<Row>
+		<Column span={3}>
+			column 1
+		</Column>
+		<Column>
+			column 2
+		</Column>
+	</Row>
 </Layout>
