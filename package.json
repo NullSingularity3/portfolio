@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.3.0",
     "@fontsource-variable/roboto": "^5.2.6",
     "@fontsource/dseg14-classic": "^5.2.5",
+    "@fontsource/libre-baskerville": "^5.2.6",
     "@stylexjs/stylex": "^0.5.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
