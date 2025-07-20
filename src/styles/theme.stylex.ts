@@ -35,3 +35,9 @@ export const tokens = stylex.defineVars({
   colWidth: '100%',
   colCount: '12',
 });
+
+export const fontFamilies = stylex.defineVars({
+  libre: "'Libre Baskerville', serif",
+  roboto: "'Roboto Variable', sans-serif",
+  digital: "'DSEG14 Classic', monospace",
+});

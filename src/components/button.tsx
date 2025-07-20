@@ -1,10 +1,11 @@
 import stylex from '@stylexjs/stylex';
-import { fontSizes, fontWeights, colors } from '../styles/theme.stylex'
+import { fontFamilies, fontSizes, fontWeights, colors } from '../styles/theme.stylex'
 
 const styles = stylex.create({
     button: {
+        fontFamily: fontFamilies.roboto,
         display: 'inline-flex',
-        fontSize: fontSizes['32'],
+        fontSize: fontSizes['32'], // Martas value
         width: 'fit-content',
         fontWeight: fontWeights.semibold,
         lineHeight: 1,
@@ -20,6 +21,9 @@ const styles = stylex.create({
             ':hover': colors.black,
         },
         transition: '.2s background-color',
+        borderColor: colors.white,
+        borderWidth: 0.5,
+        borderStyle: "solid"
     }
 });
 
