@@ -14,3 +14,5 @@ export const Container = (props: GenericChildrenProps) => (
         {props.children}
     </div>
 );
+
+export default Container;
