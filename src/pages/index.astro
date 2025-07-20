@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/layout.astro';
-import Container from '../components/container'
-import Row from '../components/row'
-import Column from '../components/column'
+import { Container, Row, Column} from '../components/grid'
+import Button from '../components/button'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -32,5 +31,19 @@ import Column from '../components/column'
 	<Row>This is row 2</Row>
 	<Row>This is row 3</Row>
 
+	<Row>
+		<Button href='/404'>
+			In Row 1
+		</Button>
+		<Button href='/404'>
+			In Row 2
+		</Button>
+		<Button href='/404'>
+			In Row 3
+		</Button>
+	</Row>
 
+	<Button href='/404'>
+		Not in row
+	</Button>
 </Layout>

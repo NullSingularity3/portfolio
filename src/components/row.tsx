@@ -13,5 +13,3 @@ export const Row = (props: GenericChildrenProps) => (
         {props.children}
     </div>
 );
-
-export default Row;
