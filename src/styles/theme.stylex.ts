@@ -24,6 +24,9 @@ export const fontSizes = stylex.defineVars({
   '30': '1.250rem',
   '32': '1.333rem',
   '40': '1.666rem',
+  '48': '1.999rem',
+  '56': '2.5rem',
+  '64': '3rem',
 });
 
 export const fontWeights = stylex.defineVars({
