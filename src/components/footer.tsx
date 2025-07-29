@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
 const styles = stylex.create(
     {
        footer: {
-        fontFamily: fontFamilies["digital"],
+        fontFamily: fontFamilies["roboto"],
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

@@ -3,7 +3,10 @@ import { colors } from '../styles/theme.stylex'
 
 const styles = stylex.create({
     row: {
+        width: 'fit-content',
         display: 'flex',
+        // justifyContent: 'space-between',     // uncomment those for auto-scaling
+        // alignItems: 'center',
         flexWrap: 'wrap',
         // backgroundColor: 'rgba(47, 14, 85, 0.86)',
         borderColor: colors.butttonWhite,
@@ -14,7 +17,9 @@ const styles = stylex.create({
 
 
 export const Row = (props: GenericChildrenProps) => (
-        <div {...stylex.props(styles.row)}>
+    // <center>
+    <div {...stylex.props(styles.row)}>
         {props.children}
     </div>
+    // </center>
 );
