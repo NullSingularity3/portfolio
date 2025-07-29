@@ -7,7 +7,7 @@ const gutter=1.25;
 
 const styles = stylex.create({
   column: {
-    backgroundColor: 'rgba(44, 255, 1, 0.86)',
+    backgroundColor: 'rgba(113, 7, 95, 0.86)',
     flexGrow: 1,
     padding: `0 ${gutter / 2}rem`,  // ` is like f-string in python
   },

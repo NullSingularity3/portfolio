@@ -2,6 +2,7 @@
 import Layout from '../layouts/layout.astro';
 import { Container, Row, Column} from '../components/grid'
 import Button from '../components/button'
+import Header from '../components/header';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,40 +11,21 @@ import Button from '../components/button'
 ---
 
 <Layout>
-	<Container><p>Hello</p></Container>
+	<Container>
+
+	<Header/>
 
 	<Row>
-		<Column span={2}>
-			Works
+		<Column span={8}>
+			<Button href='/404'>click me</Button>
+			<Button href='/404'>click me 2</Button>
+			<Button href='/404'>click me</Button>
+			<Button href='/404'>click me 2</Button>	
 		</Column>
-		<Column span={2}>
-			About
-		</Column>
-		<Column span={2}>
-			CV
-		</Column>
-		<Column span={2}>
-			Contact
-		</Column>
+
 	</Row>
 
-	<Row>This is row 1</Row>
-	<Row>This is row 2</Row>
-	<Row>This is row 3</Row>
+	
 
-	<Row>
-		<Button href='/404'>
-			In Row 1
-		</Button>
-		<Button href='/404'>
-			In Row 2
-		</Button>
-		<Button href='/404'>
-			In Row 3
-		</Button>
-	</Row>
-
-	<Button href='/404'>
-		Not in row
-	</Button>
+	</Container>
 </Layout>

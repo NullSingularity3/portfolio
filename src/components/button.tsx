@@ -5,25 +5,24 @@ const styles = stylex.create({
     button: {
         fontFamily: fontFamilies.roboto,
         display: 'inline-flex',
-        fontSize: fontSizes['32'], // Martas value
+        fontSize: fontSizes['32'], // Marta value
         width: 'fit-content',
         fontWeight: fontWeights.semibold,
         lineHeight: 1,
         textDecoration: 'none',
         padding: '0.39rem 2.5rem',
         backgroundColor: {
-            default: colors.black,
-            ':hover': colors.white,
-
+            default: colors.pageBgDark,
+            ':hover': colors.butttonWhite,
         },
         color: {
-            default: colors.white,
-            ':hover': colors.black,
+            default: colors.butttonWhite,
+            ':hover': colors.pageBgDark,
         },
         transition: '.2s background-color',
-        borderColor: colors.white,
-        borderWidth: 0.5,
-        borderStyle: "solid"
+        // borderColor: colors.butttonWhite,
+        // borderWidth: 0.5,
+        // borderStyle: "solid",
     }
 });
 

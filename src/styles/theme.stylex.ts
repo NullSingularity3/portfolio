@@ -1,6 +1,8 @@
 import * as stylex from '@stylexjs/stylex';
 
 export const colors = stylex.defineVars({
+  pageBgDark: '#101014',
+  butttonWhite: '#D9D9D9',
   black:      '#000',
   white:      '#fff',
   prim:       '#03318b',
