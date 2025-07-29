@@ -17,7 +17,7 @@ const styles = stylex.create({
 
 
 export const Row = (props: GenericChildrenProps) => (
-    // <center>
+    //<center>
     <div {...stylex.props(styles.row)}>
         {props.children}
     </div>

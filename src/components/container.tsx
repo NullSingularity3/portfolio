@@ -2,7 +2,7 @@ import stylex from '@stylexjs/stylex';
 
 const styles = stylex.create({
     container: {
-        // backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,1)), url('/header_bg.png')`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)), url('/header_bg.png')`,
         width: '100%',
         maxWidth: '1326px',
         margin: '0 auto',
