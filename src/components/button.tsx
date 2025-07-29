@@ -10,7 +10,7 @@ const styles = stylex.create({
         fontWeight: fontWeights.semibold,
         lineHeight: 1,
         textDecoration: 'none',
-        padding: '0.39rem 2.5rem',
+        padding: '1rem 2.5rem',
         backgroundColor: {
             default: colors.pageBgDark,
             ':hover': colors.butttonWhite,

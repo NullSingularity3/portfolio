@@ -5,15 +5,15 @@ import { colors, fontFamilies, fontSizes, fontWeights } from '../styles/theme.st
 const styles = stylex.create({
     backgroundWrapper: {
         width: '100%',
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)), url('/header_bg.png')`,
-
+        // backgroundColor: 'transparent',
+        // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)), url('/header_bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
     },
     wrapper: {
         paddingTop: '10rem',         // Increase space Top
-        paddingBottom: '8rem',      // Increase space Bottom
+        paddingBottom: '10rem',      // Increase space Bottom
         flexDirection: 'column',
         gap: '0.75rem',
         width: '100%',
@@ -21,11 +21,11 @@ const styles = stylex.create({
     name: {
         letterSpacing: '0.125rem',
         fontFamily: fontFamilies["roboto"],
-        fontSize: fontSizes["64"],
+        fontSize: fontSizes["72"],
         fontWeight: fontWeights["regular"],
         color: colors.white,
         paddingBottom: '0',
-        marginBottom: '-0.75rem',   // pull content down to sit on the line
+        marginBottom: '-0.9rem',   // pull content down to sit on the line
     },
     line: {
         width: '100%',
@@ -46,16 +46,12 @@ const styles = stylex.create({
         fontWeight: fontWeights["regular"],
         color: colors.white,
         opacity: 0.8,
-    },
-    menuBar: {
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        padding: '1.666rem 0',
+        marginTop: '1rem'
     },
     nav: {
         display: 'flex',
-        gap: '2rem'
+        gap: '2rem',
+        marginTop: '1rem'
     },
     link: {
         textDecoration: 'none',

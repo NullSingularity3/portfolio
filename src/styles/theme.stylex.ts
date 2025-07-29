@@ -27,13 +27,16 @@ export const fontSizes = stylex.defineVars({
   '48': '1.999rem',
   '56': '2.5rem',
   '64': '3rem',
+  '72': '3.5rem',
 });
 
 export const fontWeights = stylex.defineVars({
-  regular:  '400',
-  medium:   '500',
-  semibold: '600',
-  bold:     '700',
+  superthin:  '200',
+  thin:       '300',
+  regular:    '400',
+  medium:     '500',
+  semibold:   '600',
+  bold:       '700',
 });
 
 export const tokens = stylex.defineVars({
