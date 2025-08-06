@@ -19,6 +19,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
     gap: '2rem',
     margin: '3rem 0',
     flexWrap: 'wrap',
+    padding: '0 2rem',
   }}>
     <div style={{ flex: '1 1 300px', minWidth: '300px' }}>
       <iframe
@@ -39,6 +40,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
       flexDirection: 'column',
       alignItems: 'flex-start',
       paddingLeft: '2rem',
+      padding: '0 2rem',
       borderLeft: `4px solid ${lineColor}`,
     }}>
       <h3 style={{ margin: 0, marginBottom: '1rem', fontSize: '1.5rem', color: lineColor }}>{title}</h3>

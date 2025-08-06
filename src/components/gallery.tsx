@@ -15,7 +15,9 @@ const Gallery = ({ items }: GalleryProps) => (
     display: 'flex',
     flexWrap: 'wrap',
     gap: '4rem',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    textDecoration: 'none',
+    backgroundColor: 'transparent',
   }}>
     {items.map(item => (
       item.href ? (

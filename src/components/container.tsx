@@ -7,7 +7,7 @@ const styles = stylex.create({
         maxWidth: '1326px',
         margin: '0 auto',
         // padding: '0 1.25rem',
-        backgroundColor: 'rgb(0, 0, 0)',
+        // backgroundColor: 'transparent',
     }
 });
 
