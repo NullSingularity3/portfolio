@@ -14,7 +14,7 @@ const Gallery = ({ items }: GalleryProps) => (
   <div style={{
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '2rem',
+    gap: '4rem',
     justifyContent: 'center'
   }}>
     {items.map(item => (

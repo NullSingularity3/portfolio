@@ -8,6 +8,7 @@ const styles = stylex.create({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        textDecoration: 'none',
         backgroundColor: {
             default: colors.pageBgDark,
             ':hover': colors.butttonWhite,

@@ -6,7 +6,7 @@ const styles = stylex.create({
         width: '100%',
         maxWidth: '1326px',
         margin: '0 auto',
-        padding: '0 1.25rem',
+        // padding: '0 1.25rem',
         backgroundColor: 'rgb(0, 0, 0)',
     }
 });

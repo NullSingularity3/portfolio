@@ -4,6 +4,7 @@ import { colors, fontFamilies, fontSizes, fontWeights } from '../styles/theme.st
 
 const styles = stylex.create({
     backgroundWrapper: {
+        padding: '0 2rem',
         width: '100%',
         maxWidth: '1326px',
         margin: '0 auto',
