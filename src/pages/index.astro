@@ -8,6 +8,7 @@ import Gallery from '../components/gallery';
 
 // Load gallery data
 import paintingGallery from '../content/painting.json';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <Layout>
@@ -20,4 +21,5 @@ import paintingGallery from '../content/painting.json';
     <Gallery items={paintingGallery} />
     <Footer />
   </Container>
+  <ViewTransitions/>
 </Layout>
