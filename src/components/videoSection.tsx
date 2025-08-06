@@ -33,7 +33,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
       />
     </div>
     <div style={{
-      flex: '1 1 300px',
+      flex: '1 1 z```````00px',
       minWidth: '300px',
       display: 'flex',
       flexDirection: 'column',
