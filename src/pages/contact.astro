@@ -7,17 +7,17 @@ import Navigation from '../components/navigation';
 import Gallery from '../components/gallery';
 
 // Load gallery data
-import paintingGallery from '../content/painting.json';
+import socials from '../content/socials.json';
 ---
 
 <Layout>
   <Header />
   <Container>
-
     <div style={{ height: '4rem' }}></div>
     <Navigation />
     <div style={{ height: '4rem' }}></div>
-    <Gallery items={paintingGallery} />
+    
+    <Gallery items={socials} />
     <Footer />
   </Container>
 </Layout>

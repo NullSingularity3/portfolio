@@ -1,4 +1,12 @@
+import stylex from '@stylexjs/stylex';
 import Thumbnail from './thumbnail';
+
+const styles = stylex.create({
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
+});
 
 type GalleryItem = {
   src: string;
@@ -16,12 +24,11 @@ const Gallery = ({ items }: GalleryProps) => (
     flexWrap: 'wrap',
     gap: '4rem',
     justifyContent: 'center',
-    textDecoration: 'none',
     backgroundColor: 'transparent',
   }}>
     {items.map(item => (
       item.href ? (
-        <a key={item.label} href={item.href}>
+        <a key={item.label} href={item.href} {...stylex.props(styles.link)}>
           <Thumbnail src={item.src} style={{ width: '200px', height: '200px' }}>{item.label}</Thumbnail>
         </a>
       ) : (

@@ -19,6 +19,10 @@ const styles = stylex.create({
         },
         fontFamily: fontFamilies["roboto"],
         fontSize: fontSizes["64"]
+    },
+    link: {
+        textDecoration: 'none',
+        color: colors.butttonWhite,
     }
 });
 

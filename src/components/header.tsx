@@ -4,11 +4,11 @@ import { colors, fontFamilies, fontSizes, fontWeights } from '../styles/theme.st
 
 const styles = stylex.create({
     backgroundWrapper: {
-        padding: '0 2rem',
+        padding: '0 6rem',
         width: '100%',
-        maxWidth: '1326px',
+        // maxWidth: '1326px',
         margin: '0 auto',
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 80%, rgba(0,0,0,1) 100%), url('/header_bg.png')`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 80%, #101014 100%), url('/header_bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -87,10 +87,10 @@ export const Header = () => (
         <div {...stylex.props(styles.subtitle)}>Marta Prabucka</div>
 
         <HeaderNavigation>
-          <HeaderNavigationLink href="#">Works</HeaderNavigationLink>
-          <HeaderNavigationLink href="#">About</HeaderNavigationLink>
-          <HeaderNavigationLink href="#">CV</HeaderNavigationLink>
-          <HeaderNavigationLink href="#">Contact</HeaderNavigationLink>
+          <HeaderNavigationLink href="/">Works</HeaderNavigationLink>
+          <HeaderNavigationLink href="/about">About</HeaderNavigationLink>
+          <HeaderNavigationLink href="/cv">CV</HeaderNavigationLink>
+          <HeaderNavigationLink href="/contact">Contact</HeaderNavigationLink>
         </HeaderNavigation>
       </div>
     </div>
