@@ -11,17 +11,9 @@ import VideoSection from '../components/videoSection.tsx';
 <Layout>
   <Container>
     <Header />
-
-    <!-- Spacer to push buttons below header_bg -->
     <div style={{ height: '4rem' }}></div>
-
-    <!-- Navigation Buttons -->
-    <Row>
-      <Button href="/">Painting</Button>
-      <Button href="/animation">Animation</Button>
-      <Button href="/vj">VJ</Button>
-      <Button href="/other">Other</Button>
-    </Row>
+    <Navigation />
+    <div style={{ height: '4rem' }}></div>
 
     <VideoSection
       src="https://www.youtube.com/embed/UB9_eVCAyjU"
