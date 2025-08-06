@@ -14,6 +14,7 @@ const styles = stylex.create(
         border: '0.5px',
         borderColor: colors.butttonWhite,
         borderStyle: "solid",
+        marginTop: '4rem', // Added top margin
        } 
     }
 )
@@ -21,7 +22,7 @@ const styles = stylex.create(
 const Footer = (props: GenericChildrenProps) => {
     return (
         <footer {...stylex.props(styles.footer)}>
-            <p>© Portfolio of Marta Prabucka · {currentYear}</p>
+            <p>© Portfolio of Marta Prabucka / {currentYear}</p>
         </footer>
     );
 };

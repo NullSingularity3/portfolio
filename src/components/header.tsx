@@ -5,8 +5,9 @@ import { colors, fontFamilies, fontSizes, fontWeights } from '../styles/theme.st
 const styles = stylex.create({
     backgroundWrapper: {
         width: '100%',
-        // backgroundColor: 'transparent',
-        // backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)), url('/header_bg.png')`,
+        maxWidth: '1326px',
+        margin: '0 auto',
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 80%, rgba(0,0,0,1) 100%), url('/header_bg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

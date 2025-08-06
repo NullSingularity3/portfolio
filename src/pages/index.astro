@@ -13,25 +13,38 @@ import Thumbnail from '../components/thumbnail';
 ---
 
 <Layout>
-	<Container>
-	<Header/>
+  <Container>
+    <Header />
 
-	<Row>
-			<Button href='b1'>Painting</Button>
-			<Button href='b1'>Animation</Button>
-			<Button href='b1'>VJ</Button>
-			<Button href='b1'>Other</Button>
-	</Row>
+    <!-- Spacer to push buttons below header_bg -->
+    <div style={{ height: '4rem' }}></div>
 
-	some text
-	some
+    <!-- Navigation Buttons -->
+    <Row>
+      <Button href="/">Painting</Button>
+      <Button href="/animation">Animation</Button>
+      <Button href="/vj">VJ</Button>
+      <Button href="/other">Other</Button>
+    </Row>
 
-	<Row>
-		<Thumbnail src="img_forest.jpg" >2023/ 24</Thumbnail>
-		<Thumbnail src="img_forest.jpg" >2021/23</Thumbnail>
-		<Thumbnail src="img_forest.jpg" >- /2021</Thumbnail>
-	</Row>
 
-	<Footer></Footer>
-	</Container>
+
+    <!-- Media Sections -->
+    <div style={{ height: '12rem' }}></div>
+
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '2rem',
+        justifyContent: 'center'
+      }}>
+        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>
+        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>
+        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>        
+      </div>
+
+  
+
+    <Footer />
+  </Container>
 </Layout>
