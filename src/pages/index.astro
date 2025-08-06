@@ -1,50 +1,22 @@
 ---
 import Layout from '../layouts/layout.astro';
-import { Container, Row, Column} from '../components/grid'
-import Button from '../components/button'
+import { Container } from '../components/grid';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Thumbnail from '../components/thumbnail';
+import Navigation from '../components/navigation';
+import Gallery from '../components/gallery';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
-
-// hint: modify this file and refresh page
+// Load gallery data
+import paintingGallery from '../content/painting.json';
 ---
 
 <Layout>
   <Container>
     <Header />
-
-    <!-- Spacer to push buttons below header_bg -->
     <div style={{ height: '4rem' }}></div>
-
-    <!-- Navigation Buttons -->
-    <Row>
-      <Button href="/">Painting</Button>
-      <Button href="/animation">Animation</Button>
-      <Button href="/vj">VJ</Button>
-      <Button href="/other">Other</Button>
-    </Row>
-
-
-
-    <!-- Media Sections -->
-    <div style={{ height: '12rem' }}></div>
-
-      <div style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '2rem',
-        justifyContent: 'center'
-      }}>
-        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>
-        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>
-        <Thumbnail src="img_forest.jpg" style={{ width: '200px', height: '200px' }}>2023/24</Thumbnail>        
-      </div>
-
-  
-
+    <Navigation />
+    <div style={{ height: '4rem' }}></div>
+    <Gallery items={paintingGallery} />
     <Footer />
   </Container>
 </Layout>
