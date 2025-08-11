@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import Navigation from '../components/navigation';
 import Thumbnail from '../components/thumbnail';
 import VideoSection from '../components/videoSection.tsx';
+import { ClientRouter } from "astro:transitions";
 ---
 
 <Layout>
@@ -34,3 +35,6 @@ import VideoSection from '../components/videoSection.tsx';
     <Footer />
   </Container>
 </Layout>
+
+<ClientRouter />
+

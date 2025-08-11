@@ -5,19 +5,17 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Navigation from '../components/navigation';
 import Gallery from '../components/gallery';
-
-// Load gallery data
 import socials from '../content/socials.json';
+import { ClientRouter } from "astro:transitions";
 ---
 
 <Layout>
   <Header />
   <Container>
     <div style={{ height: '4rem' }}></div>
-    <Navigation />
-    <div style={{ height: '4rem' }}></div>
-    
     <Gallery items={socials} />
     <Footer />
   </Container>
 </Layout>
+
+<ClientRouter />
